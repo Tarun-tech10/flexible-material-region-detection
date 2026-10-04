@@ -1,0 +1,7 @@
+fold 0 honest 0.6993 gamma 1.0 scale 1.0 dict 1 cellhi 0.6
+fold 1 honest 0.66557 gamma 1.0 scale 1.0 dict 1 cellhi 0.7
+fold 2 honest 0.65734 gamma 1.0 scale 1.0 dict 1 cellhi 0.7
+HONEST MEAN 0.67407  (0.67407 without size_gamma)
+tuned-on-all 0.6747
+{"nms_thr": 0.4, "pk_thr": 0.3, "cell_thr": 0.35, "cell_empty": 0.3, "card_empty": 0.3, "card_extra": 0.0, "box_scale": 1.0, "use_grid_cells": 0, "empty_prior": 0.145, "knn_alpha": 0.0, "dict_src": 1, "cell_hi": 0.7, "size_gamma": 1.0, "w_knn": 0.0, "w_peak": 0.0}
+parts {'cell_f1': 0.8236, 'count': 0.9549, 'bin': 0.8133, 'zone': 0.8403, 'area': 0.7882, 'card': 0.6748, 'TOTAL': 0.7686}

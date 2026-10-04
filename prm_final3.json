@@ -1,0 +1,17 @@
+{
+ "nms_thr": 0.4,
+ "pk_thr": 0.3,
+ "cell_thr": 0.35,
+ "cell_empty": 0.3,
+ "card_empty": 0.3,
+ "card_extra": 0.0,
+ "box_scale": 1.0,
+ "use_grid_cells": 0,
+ "empty_prior": 0.145,
+ "knn_alpha": 0.0,
+ "dict_src": 1,
+ "cell_hi": 0.7,
+ "size_gamma": 1.0,
+ "w_knn": 0.0,
+ "w_peak": 0.0
+}

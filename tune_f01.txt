@@ -1,0 +1,43 @@
+OOF rows: 1200  folds: [0, 1]
+peak-count vs true count: MAE 1.117
+
+=== count sources (median decode, OOF rows) ===
+  cnn   MAE 0.5283   empty-acc 0.9992
+  knn   MAE 1.0042   empty-acc 0.8042
+  peak  MAE 0.5967   empty-acc 0.9867
+
+=== reference points (test-matched weighting) ===
+  always-empty     : 0.23959
+  default decode   : 0.66163
+
+=== coordinate ascent (test-matched) ===
+  start 0.66163
+   r0 cell_empty       0.62 -> 0.2   0.66193
+   r0 card_empty       0.55 -> 0.2   0.66234
+   r0 pk_thr           0.1 -> 0.3   0.66352
+   r0 nms_thr          0.45 -> 0.4   0.66359
+   r0 use_grid_cells   1 -> 0   0.67037
+   r0 w_knn            0.0 -> 0.15   0.67084
+   r0 w_peak           0.0 -> 1.0   0.67207
+   r1 pk_thr           0.3 -> 0.25   0.67303
+  TUNED: 0.67303
+  params: {"nms_thr": 0.4, "pk_thr": 0.25, "cell_thr": 0.35, "cell_empty": 0.2, "card_empty": 0.2, "card_extra": 0.0, "box_scale": 1.0, "use_grid_cells": 0, "empty_prior": 0.145, "knn_alpha": 0.0, "w_knn": 0.15, "w_peak": 1.0}
+  unweighted parts: {'cell_f1': 0.8302, 'count': 0.9574, 'bin': 0.8233, 'zone': 0.8216, 'area': 0.7812, 'card': 0.6961, 'TOTAL': 0.7751}
+
+=== the trap: tuning on the RAW train distribution instead ===
+  raw-tuned score on raw dist : 0.77590
+  raw-tuned score on TEST dist: 0.67232
+  test-tuned score on TEST    : 0.67303  -> gain +0.00071
+
+=== decode-overfit check (tune on half the folds, eval on the other) ===
+  held-out half: default 0.64834 | tuned-on-A 0.65368 | tuned-on-ALL 0.65595
+  optimism of tuning on all folds: +0.00228
+
+=== sensitivity to the assumed test empty-rate ===
+  assume 0.100 -> scored under 0.100: 0.65392 | our params under 0.100: 0.65392
+  assume 0.145 -> scored under 0.145: 0.67303 | our params under 0.145: 0.67303
+  assume 0.200 -> scored under 0.200: 0.69596 | our params under 0.200: 0.69606
+  assume 0.300 -> scored under 0.300: 0.73667 | our params under 0.300: 0.73703
+  assume 0.396 -> scored under 0.396: 0.77478 | our params under 0.396: 0.77531
+
+saved prm_v1.json

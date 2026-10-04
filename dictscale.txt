@@ -1,0 +1,8 @@
+=== leave-one-fold-out ===
+  fold0: base 0.70037 -> new 0.70037 (+0.00000)   chosen scale=1.0 gamma=1.0
+  fold1: base 0.66557 -> new 0.66557 (+0.00000)   chosen scale=1.0 gamma=1.0
+  fold2: base 0.66077 -> new 0.66077 (+0.00000)   chosen scale=1.0 gamma=1.0
+  MEAN : base 0.67557 -> new 0.67557 (+0.00000)
+
+tuned on all: 0.67470  scale=1.0 gamma=1.0   (base 0.67470)
+parts: {'cell_f1': 0.8236, 'count': 0.9549, 'bin': 0.8133, 'zone': 0.8403, 'area': 0.7882, 'card': 0.6748, 'TOTAL': 0.7686}

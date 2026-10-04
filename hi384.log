@@ -1,0 +1,8 @@
+resolution 384x256  feature 48x32
+[fold 0] train 1200 val 600
+    ep  0 hm2.649 wh1.725 off0.919 grid0.319 cnt2.178 zon0.793 abn0.735  91s
+    ep  5 hm1.594 wh0.458 off0.467 grid0.204 cnt1.310 zon0.439 abn0.350  530s
+    ep 10 hm1.345 wh0.349 off0.433 grid0.170 cnt1.227 zon0.428 abn0.338  973s
+    ep 15 hm1.189 wh0.305 off0.403 grid0.153 cnt1.197 zon0.418 abn0.330  1430s
+    ep 20 hm1.066 wh0.263 off0.398 grid0.140 cnt1.131 zon0.386 abn0.318  2255s
+    ep 25 hm0.912 wh0.234 off0.370 grid0.117 cnt1.020 zon0.347 abn0.307  3526s

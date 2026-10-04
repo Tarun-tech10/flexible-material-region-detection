@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.err
+*.pid
+
+# Large cached data, model weights and predictions are not part of the repo
+*.npy
+*.npz
+*.pt
+montage.png

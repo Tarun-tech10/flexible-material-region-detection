@@ -1,0 +1,6 @@
+﻿[fold 0] train 1440 val 360
+    ep  0 hm2.507 wh1.510 off0.939 grid0.334 cnt2.289 zon0.810 abn0.764  75s
+    ep  5 hm1.304 wh0.445 off0.443 grid0.210 cnt1.347 zon0.463 abn0.368  394s
+    ep 10 hm1.141 wh0.359 off0.401 grid0.181 cnt1.300 zon0.453 abn0.354  839s
+    ep 15 hm0.989 wh0.295 off0.374 grid0.157 cnt1.198 zon0.424 abn0.340  1328s
+    ep 20 hm0.884 wh0.257 off0.353 grid0.147 cnt1.132 zon0.381 abn0.328  2181s

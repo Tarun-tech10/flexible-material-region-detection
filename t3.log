@@ -1,0 +1,34 @@
+[fold 0] train 1200 val 600
+    ep  0 hm2.629 wh1.689 off0.975 grid0.328 cnt2.315 zon0.806 abn0.766  50s
+    ep  5 hm1.407 wh0.476 off0.459 grid0.201 cnt1.303 zon0.432 abn0.349  312s
+    ep 10 hm1.187 wh0.350 off0.414 grid0.172 cnt1.218 zon0.424 abn0.336  680s
+    ep 15 hm1.022 wh0.313 off0.387 grid0.150 cnt1.137 zon0.415 abn0.320  945s
+    ep 20 hm0.920 wh0.269 off0.355 grid0.140 cnt1.087 zon0.381 abn0.310  1208s
+    ep 25 hm0.817 wh0.245 off0.342 grid0.125 cnt1.015 zon0.352 abn0.299  1474s
+    ep 30 hm0.688 wh0.223 off0.328 grid0.113 cnt0.892 zon0.321 abn0.282  1838s
+    ep 35 hm0.631 wh0.207 off0.300 grid0.103 cnt0.741 zon0.299 abn0.272  2086s
+    ep 37 hm0.618 wh0.201 off0.293 grid0.103 cnt0.758 zon0.301 abn0.271  2183s
+[fold 0] saved
+[fold 1] train 1200 val 600
+    ep  0 hm2.645 wh1.860 off0.844 grid0.312 cnt2.198 zon0.768 abn0.738  49s
+    ep  5 hm1.402 wh0.447 off0.453 grid0.194 cnt1.232 zon0.397 abn0.316  588s
+    ep 10 hm1.190 wh0.360 off0.409 grid0.164 cnt1.118 zon0.375 abn0.297  823s
+    ep 15 hm1.057 wh0.311 off0.393 grid0.147 cnt1.083 zon0.370 abn0.293  1033s
+    ep 20 hm0.926 wh0.278 off0.370 grid0.130 cnt1.006 zon0.346 abn0.281  1216s
+    ep 25 hm0.816 wh0.250 off0.344 grid0.119 cnt0.931 zon0.327 abn0.262  1406s
+    ep 30 hm0.715 wh0.227 off0.321 grid0.108 cnt0.834 zon0.310 abn0.248  1608s
+    ep 35 hm0.629 wh0.204 off0.299 grid0.099 cnt0.757 zon0.295 abn0.239  1770s
+    ep 37 hm0.613 wh0.204 off0.305 grid0.098 cnt0.714 zon0.288 abn0.235  1823s
+[fold 1] saved
+[fold 2] train 1200 val 600
+    ep  0 hm2.658 wh1.992 off0.953 grid0.328 cnt2.219 zon0.779 abn0.754  28s
+    ep  5 hm1.373 wh0.477 off0.458 grid0.178 cnt1.215 zon0.389 abn0.318  153s
+    ep 10 hm1.190 wh0.371 off0.420 grid0.156 cnt1.121 zon0.378 abn0.301  329s
+    ep 15 hm1.037 wh0.326 off0.384 grid0.138 cnt1.040 zon0.360 abn0.290  680s
+    ep 20 hm0.938 wh0.288 off0.367 grid0.128 cnt0.987 zon0.332 abn0.282  1501s
+    ep 25 hm0.794 wh0.249 off0.343 grid0.111 cnt0.911 zon0.304 abn0.271  2365s
+    ep 30 hm0.704 wh0.223 off0.318 grid0.101 cnt0.832 zon0.278 abn0.257  2624s
+    ep 35 hm0.589 wh0.201 off0.303 grid0.094 cnt0.745 zon0.266 abn0.255  2917s
+    ep 37 hm0.594 wh0.205 off0.297 grid0.091 cnt0.729 zon0.267 abn0.251  3031s
+[fold 2] saved
+done

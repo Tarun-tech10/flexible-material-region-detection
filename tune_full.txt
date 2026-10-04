@@ -1,0 +1,41 @@
+OOF rows: 1800  folds: [0, 1, 2]
+peak-count vs true count: MAE 1.151
+
+=== count sources (median decode, OOF rows) ===
+  cnn   MAE 0.5400   empty-acc 0.9983
+  knn   MAE 0.9494   empty-acc 0.8489
+  peak  MAE 0.6094   empty-acc 0.9850
+
+=== reference points (test-matched weighting) ===
+  always-empty     : 0.22420
+  default decode   : 0.65185
+
+=== coordinate ascent (test-matched) ===
+  start 0.65185
+   r0 cell_empty       0.62 -> 0.3   0.65214
+   r0 card_empty       0.55 -> 0.3   0.65240
+   r0 pk_thr           0.1 -> 0.3   0.65393
+   r0 nms_thr          0.45 -> 0.4   0.65397
+   r0 use_grid_cells   1 -> 0   0.66119
+   r0 w_peak           0.0 -> 0.3   0.66346
+  TUNED: 0.66346
+  params: {"nms_thr": 0.4, "pk_thr": 0.3, "cell_thr": 0.35, "cell_empty": 0.3, "card_empty": 0.3, "card_extra": 0.0, "box_scale": 1.0, "use_grid_cells": 0, "empty_prior": 0.145, "knn_alpha": 0.0, "w_knn": 0.0, "w_peak": 0.3}
+  unweighted parts: {'cell_f1': 0.8163, 'count': 0.9552, 'bin': 0.8172, 'zone': 0.8114, 'area': 0.764, 'card': 0.6777, 'TOTAL': 0.7611}
+
+=== the trap: tuning on the RAW train distribution instead ===
+  raw-tuned score on raw dist : 0.76187
+  raw-tuned score on TEST dist: 0.66372
+  test-tuned score on TEST    : 0.66346  -> gain -0.00026
+
+=== decode-overfit check (tune on half the folds, eval on the other) ===
+  held-out half: default 0.64100 | tuned-on-A 0.64625 | tuned-on-ALL 0.65132
+  optimism of tuning on all folds: +0.00507
+
+=== sensitivity to the assumed test empty-rate ===
+  assume 0.100 -> scored under 0.100: 0.64571 | our params under 0.100: 0.64593
+  assume 0.145 -> scored under 0.145: 0.66346 | our params under 0.145: 0.66346
+  assume 0.200 -> scored under 0.200: 0.68501 | our params under 0.200: 0.68489
+  assume 0.300 -> scored under 0.300: 0.72433 | our params under 0.300: 0.72384
+  assume 0.396 -> scored under 0.396: 0.76165 | our params under 0.396: 0.76124
+
+saved prm_v1.json
