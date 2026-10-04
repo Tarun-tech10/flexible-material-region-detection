@@ -1,6 +1,7 @@
-# Container grid detection
+# Flexible material region detection
 
-Working code for an overhead industrial-container detection task: a CNN
+Working code for detecting flexible material regions in overhead industrial
+container images: a fine-tuned CNN
 (heatmap / box / grid-cell / count / zone / area-bin heads) plus kNN retrieval,
 post-processing and parameter tuning that turn detections into the task's grid
 labels (cells, count bin, zone, area bin, region cards).
